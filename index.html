@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <title> Bonobo Backend </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script src="cgi-bin/reportClick.js"></script>
+    <script src="cgi-bin/calendarPopup.js"></script>
+    <script src="cgi-bin/calendarClick.js"></script>
+  </head>
+
+  <body>
+
+
+
+    <div id="container">
+
+      <div id="title">
+	    <span id="maintitle">Bonobo Database Backend</span><small>v0.1</small>
+      </div>
+
+	  <table id="main">
+	    <tr>
+	      <td id="nav">
+	        <table class="wide">
+	          <tr>
+	            <td id="dates">
+	              <table>
+	                <form>
+	                <tr>
+	                  <td>Start Date:</td>
+	                  <td><input id="startdate" name="startdate" type="text" size="10"/></td>
+	                  <td><input type="button" value="..." onclick="calendarClick('startdate')"></td>
+	                </tr>
+	                <tr>
+	                  <td>End Date:</td>
+	                  <td><input id="enddate" name="enddate" type="text" size="10"/></td>
+	                  <td><input type="button" value="..." onclick="calendarClick('enddate')"></td>
+	                </tr>
+	                </form>
+	              </table>
+				  <hr/>
+
+	   		      <input class="wide" type="button" value="Product Sales" onclick="reportClick('productsout')">
+	   		      <input class="wide" type="button" value="Alcohol Sales" onclick="reportClick('alcohol')">
+	   		      <input class="wide" type="button" value="User Sales" onclick="reportClick('user')">
+	   		      <input class="wide" type="button" value="Sales Taxes" onclick="reportClick('taxes')">
+	   		      <input class="wide" type="button" value="Payment Types" onclick="reportClick('payments')">
+	   		      <input class="wide" type="button" value="Hourly Sales" onclick="reportClick('hourly')">
+				  <hr/>
+				  <input class="wide" type="button"
+					  onClick="document.getElementById('report').contentWindow.print();"
+					  value="Print Report -->"/>
+	            </td>
+	          </tr>
+	          <tr>
+    		    <td>
+
+    		    </td>
+    		  </tr>
+    		</table>
+		  </td>
+          <td>
+            <iframe id="report" src="http://www.facebook.com"></iframe>
+          </td>
+        </tr>
+      </table>
+
+
+      <div id="siteinfo">
+	    Jason LaFrance &copy; 2012<br/>
+	    <a href="mailto:j-lafrance@weirdness.com">j-lafrance@weirdness.com</a>
+      </div>
+
+    </div>
+  </body>
+</html>

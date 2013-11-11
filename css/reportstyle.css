@@ -1,0 +1,38 @@
+body {		background-color: white;
+		color: black;
+		text-align: center;
+		font-family: courier, arial;
+		font-size: 10pt;
+	}
+
+.rowcolor0 {	background-color: #dddddd;
+		color: #000000;
+	}
+
+.rowcolor1 {	background-color: #aaaaaa;
+		color: #000000;
+	}
+
+.column-header {border-bottom: 1px solid black;
+
+	}
+
+.entry {	
+	}
+	
+.column-footer {border-top: 1px solid black;
+		
+	}
+
+
+#container {	width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid gray;
+}
+
+
+
+#report-title {
+
+}
